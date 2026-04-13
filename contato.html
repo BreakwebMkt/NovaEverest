@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Nova Everest</title>
+    <meta name="description" content="Entre em contato com a Nova Everest para solicitar orcamento." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-nova-everest-round.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="section-container nav-wrap">
+        <a class="brand" href="./index.html" aria-label="Nova Everest">
+          <img class="brand-logo" src="./assets/logo-nova-everest-clean.png" alt="Nova Everest" />
+        </a>
+        <button class="mobile-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" data-menu>
+          <a href="./index.html">Inicio</a>
+          <a href="./produtos.html">Produtos</a>
+          <a class="is-active" href="./contato.html">Contato</a>
+          <a class="phone-btn phone-btn-mobile" href="tel:+551120282005">(11) 2028-2005</a>
+        </nav>
+        <a class="phone-btn" href="tel:+551120282005">(11) 2028-2005</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-head gradient-navy section-padding">
+        <div class="section-container reveal fade-in">
+          <p class="kicker">FALE CONOSCO</p>
+          <h1>Entre em Contato</h1>
+          <p>Nossa equipe esta pronta para atender sua empresa com agilidade e eficiencia.</p>
+        </div>
+      </section>
+
+      <section class="section-padding">
+        <div class="section-container contact-grid">
+          <aside class="contact-info">
+            <h2>Informacoes Comerciais</h2>
+            <div class="info-item">
+              <h3>Email</h3>
+              <a href="mailto:atendimento@novaeverest.com.br">atendimento@novaeverest.com.br</a>
+            </div>
+            <div class="info-item">
+              <h3>Telefone</h3>
+              <a href="tel:+551120282005">(11) 2028-2005</a>
+            </div>
+            <div class="info-item">
+              <h3>Endereco</h3>
+              <p>Av. Sapopemba, 1815 / Vl. Regente Feijo - Sao Paulo - SP / CEP 03345-001</p>
+            </div>
+            <a class="btn btn-whatsapp" href="https://wa.me/551120282005" target="_blank" rel="noopener">Conversar no WhatsApp</a>
+          </aside>
+
+          <section class="form-wrap">
+            <h2>Solicite um Orcamento</h2>
+            <form id="whatsapp-form" class="contact-form">
+              <div class="two-fields">
+                <label>Nome
+                  <input type="text" name="nome" required />
+                </label>
+                <label>Email
+                  <input type="email" name="email" required />
+                </label>
+              </div>
+              <label>Telefone
+                <input type="tel" name="telefone" />
+              </label>
+              <label>Mensagem
+                <textarea name="mensagem" rows="4" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Enviar via WhatsApp</button>
+            </form>
+          </section>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Mapa Nova Everest"
+            src="https://www.google.com/maps?q=Av.%20Sapopemba%2C%201815%2C%20S%C3%A3o%20Paulo%20SP&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container footer-grid">
+        <div><h3>NOVA EVEREST</h3><p>20+ anos de tradicao no segmento de suprimentos industriais para todo o Brasil.</p></div>
+        <div><h4>NAVEGACAO</h4><a href="./index.html">Inicio</a><a href="./produtos.html">Produtos</a><a href="./contato.html">Contato</a></div>
+        <div><h4>CONTATO</h4><a href="mailto:atendimento@novaeverest.com.br">atendimento@novaeverest.com.br</a><a href="tel:+551120282005">(11) 2028-2005</a><p>Av. Sapopemba, 1815 - Vl. Regente Feijo - Sao Paulo/SP - CEP 03345-001</p></div>
+      </div>
+      <div class="section-container footer-copy">© 2026 Nova Everest. Todos os direitos reservados.</div>
+    </footer>
+
+    <a class="whatsapp-float" href="https://wa.me/551120282005" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0 11.94 11.94 0 0 0 1.68 17.87L0 24l6.3-1.65A11.93 11.93 0 0 0 12 24h.05A11.95 11.95 0 0 0 24 12.06a11.85 11.85 0 0 0-3.48-8.58Zm-8.46 18.5h-.04a9.88 9.88 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.9 9.9 0 1 1 8.41 4.63Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.16-.17.2-.34.23-.64.08-.3-.15-1.26-.46-2.4-1.46a8.98 8.98 0 0 1-1.66-2.06c-.18-.3-.02-.46.13-.6.13-.13.3-.34.45-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.57-.48-.5-.66-.5h-.56c-.2 0-.52.08-.8.37-.27.3-1.03 1-1.03 2.45 0 1.45 1.05 2.86 1.2 3.06.15.2 2.06 3.14 5 4.4.7.3 1.25.48 1.67.61.7.22 1.33.19 1.84.12.56-.08 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35Z"/></svg>
+    </a>
+    <script src="./script.js"></script>
+  </body>
+</html>
+

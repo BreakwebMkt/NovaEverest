@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto | Nova Everest</title>
+    <meta name="description" content="Detalhes técnicos de produtos industriais da Nova Everest." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon-nova-everest-round.png" />
+  </head>
+  <body>
+
+    <!-- ── HEADER ─────────────────────────────────────────── -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./index.html" aria-label="Nova Everest – Página inicial">
+          <img class="brand__logo" src="./assets/logo-nova-everest-clean.png" alt="Nova Everest Suprimentos Industriais" />
+        </a>
+        <button class="mobile-toggle" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <nav class="nav" id="main-nav" aria-label="Menu principal" data-menu>
+          <a href="./index.html">Início</a>
+          <a class="active" href="./produtos.html">Produtos</a>
+          <a href="./produtos.html#catalogos">Catálogos</a>
+          <a href="./index.html#distribuidores">Distribuidores</a>
+          <a href="./contato.html">Contato</a>
+        </nav>
+        <a class="btn btn--ghost" href="./contato.html">Solicitar cotação</a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ── DETALHE DO PRODUTO ─────────────────────────────── -->
+      <section class="section container reveal product-detail" id="produto-detalhe" aria-labelledby="produto-titulo">
+        <div class="product-detail__head">
+          <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="./index.html">Início</a>
+            <span aria-hidden="true">›</span>
+            <a href="./produtos.html">Produtos</a>
+            <span aria-hidden="true">›</span>
+            <span id="produto-categoria-breadcrumb" aria-current="page">Produto</span>
+          </nav>
+          <p class="eyebrow" id="produto-categoria">Produto</p>
+          <h1 class="page-title" id="produto-titulo">Produto industrial</h1>
+          <p class="lead" id="produto-resumo"></p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="./contato.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              Solicitar cotação
+            </a>
+            <a class="btn btn--soft" href="./produtos.html">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+              Voltar ao catálogo
+            </a>
+          </div>
+          <!-- Chips de atributos dinâmicos -->
+          <div class="chips" id="produto-chips" aria-label="Características do produto"></div>
+        </div>
+        <div class="product-detail__media">
+          <img id="produto-capa" src="" alt="" loading="eager" />
+        </div>
+      </section>
+
+      <!-- ── CONTEÚDO TÉCNICO ───────────────────────────────── -->
+      <section class="section container reveal" aria-label="Informações técnicas do produto">
+        <div class="product-rich" id="produto-conteudo"></div>
+        <div class="product-gallery" id="produto-galeria" aria-label="Galeria de imagens do produto"></div>
+      </section>
+
+      <!-- ── CTA INLINE ─────────────────────────────────────── -->
+      <section class="section container reveal cta-band" aria-label="Chamada para cotação">
+        <div>
+          <p class="eyebrow">Pronto para comprar?</p>
+          <h2>Solicite sua cotação com resposta em até 24h</h2>
+          <p>Nossa equipe técnica analisa sua demanda e retorna com opções de fornecimento nacional e importado.</p>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="./contato.html">Solicitar cotação</a>
+          <a class="btn btn--soft" href="https://wa.me/551120282005" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </section>
+
+      <!-- ── PRODUTOS RELACIONADOS ──────────────────────────── -->
+      <section class="section container reveal" aria-labelledby="relacionados-titulo">
+        <div class="section__head">
+          <p class="eyebrow">Outras linhas</p>
+          <h2 id="relacionados-titulo">Continue navegando pelo nosso portfólio</h2>
+        </div>
+        <div class="catalog-grid" id="produto-relacionados"></div>
+      </section>
+
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="footer-brand">
+          <img src="./assets/logo-nova-everest-clean.png" alt="Nova Everest" loading="lazy" />
+          <p>Distribuição e importação de suprimentos industriais.<br>Atendimento nacional com suporte técnico-comercial.</p>
+          <p>Av. Sapopemba, 1815 — Vila Regente Feijó — São Paulo/SP — CEP 03345-001</p>
+        </div>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="./index.html">Início</a>
+          <a href="./produtos.html">Produtos</a>
+          <a href="./produtos.html#catalogos">Catálogos</a>
+          <a href="./index.html#distribuidores">Distribuidores</a>
+          <a href="./contato.html">Contato</a>
+          <a href="mailto:atendimento@novaeverest.com.br">atendimento@novaeverest.com.br</a>
+          <a href="tel:+551120282005">(11) 2028-2005</a>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2025 Nova Everest Suprimentos Industriais. Todos os direitos reservados.</p>
+        <p>CNPJ: informações disponíveis no contato comercial.</p>
+      </div>
+    </footer>
+
+    <!-- ── WHATSAPP FLUTUANTE ─────────────────────────────── -->
+    <a class="floating-whats" href="https://wa.me/551120282005" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M13.601 2.326A7.854 7.854 0 0 0 6.165 13.94L5 18l4.21-1.106a7.86 7.86 0 0 0 4.39 1.344h.003a7.857 7.857 0 0 0 0-15.712zm4.414 11.145c-.185.518-.919.95-1.285 1.001-.33.049-.746.07-1.203-.077-.277-.089-.632-.205-1.091-.404-1.92-.829-3.17-2.763-3.267-2.892-.096-.129-.78-1.04-.78-1.984 0-.944.496-1.407.672-1.599.176-.193.383-.241.512-.241h.368c.118 0 .276-.045.431.327.16.386.544 1.333.591 1.43.048.096.08.209.016.338-.064.128-.096.209-.192.321-.096.112-.203.25-.289.337-.096.096-.196.2-.084.392.112.193.5.824 1.073 1.335.737.657 1.358.86 1.551.957.193.096.305.08.417-.048.112-.128.48-.56.608-.753.128-.193.257-.16.433-.096.176.064 1.113.525 1.305.62.193.096.321.145.369.225.048.08.048.466-.136.984z"/>
+      </svg>
+    </a>
+
+    <!-- ── DADOS DOS PRODUTOS + INJEÇÃO ──────────────────── -->
+    <script>
+      const productData = {
+        'rolamentos-industriais': {
+          categoria: 'Rolamentos',
+          titulo: 'Rolamentos industriais',
+          resumo: 'A maioria dos rolamentos é formada por anéis com pistas, corpos rolantes e gaiola, permitindo giro com baixo atrito e alta confiabilidade operacional para aplicações industriais, agrícolas e automotivas.',
+          capa: './assets/produtos/ROLAMENTO-1024x1024.png',
+          capaAlt: 'Rolamento industrial Nova Everest',
+          chips: ['Alta carga radial', 'Alta rotação', 'Baixo atrito', 'Longa vida útil'],
+          conteudo: `
+            <h2>Como funciona a classificação dos rolamentos?</h2>
+            <p>Os rolamentos se dividem em dois grupos principais: <strong>rolamentos de esferas</strong> e <strong>rolamentos de rolos</strong>. A escolha correta do tipo impacta diretamente na vida útil do equipamento e na eficiência operacional.</p>
+            <ul>
+              <li><strong>Rolamentos de esferas:</strong> rígidos, contato angular e axiais — ideais para cargas leves a médias e alta velocidade.</li>
+              <li><strong>Rolamentos de rolos:</strong> cilíndricos, agulhas, cônicos e esféricos — indicados para cargas pesadas e aplicações de impacto.</li>
+              <li><strong>Classificação por direção de carga:</strong> radiais (carga perpendicular ao eixo) e axiais (carga paralela ao eixo).</li>
+            </ul>
+            <h3>Outros métodos de classificação</h3>
+            <ul>
+              <li>Número de pistas: simples, múltipla ou 4 pistas.</li>
+              <li>Separáveis e não separáveis.</li>
+              <li>Axiais de sentido único e de duplo sentido.</li>
+            </ul>
+            <h3>Rolamento axial de esferas</h3>
+            <p>Projetado para cargas axiais. Existe em escora simples (carga axial em um sentido) e escora dupla (carga axial em ambos os sentidos). Amplamente utilizado em caixas de câmbio, bombas e compressores.</p>
+            <h3>Rolamento autocompensador de esferas</h3>
+            <p>Indicado para aplicações com desalinhamento entre eixo e alojamento, com baixo atrito e boa performance em alta velocidade.</p>
+            <ul>
+              <li>Atrito muito baixo — menor temperatura de operação.</li>
+              <li>Menor vibração e ruído.</li>
+              <li>Maior vida útil da lubrificação.</li>
+              <li>Compensação de desalinhamento angular até 3°.</li>
+            </ul>
+            <h3>Rolamentos de contato angular</h3>
+            <p>Adequados para cargas combinadas (axiais e radiais), com aplicação frequente em agricultura, produtos químicos e indústria em geral. Disponíveis em configuração simples ou dupla.</p>
+          `,
+          galeria: [
+            './assets/produtos/3_NSK_Rolamentos_HPS_Alta2.jpg',
+            './assets/produtos/1004_EMM_CRB.jpg',
+            './assets/produtos/ROLAMENTO.png'
+          ]
+        },
+        'correias': {
+          categoria: 'Correias',
+          titulo: 'Correias industriais',
+          resumo: 'Linhas em V, sincronizadoras e variadoras para transmissão de potência em diferentes aplicações industriais e agrícolas. Distribuidor oficial Optibelt.',
+          capa: './assets/distribuidores/Slide6.jpg',
+          capaAlt: 'Correias industriais Optibelt',
+          chips: ['Transmissão de potência', 'Agrícola', 'Industrial', 'Alta durabilidade'],
+          conteudo: `
+            <h2>Linhas de correias disponíveis</h2>
+            <p>A Nova Everest é distribuidora oficial <strong>Optibelt</strong>, líder mundial em correias agrícolas, com presença nas principais montadoras e preços competitivos.</p>
+            <h3>Correias em V clássicas e standard</h3>
+            <p>Indicadas para transmissão de potência em equipamentos industriais e agrícolas de médio porte. Alta resistência ao desgaste e temperatura.</p>
+            <h3>Correias sincronizadoras</h3>
+            <p>Transmissão síncrona sem escorregamento, disponíveis em cloropreno e poliuretano. Ideais para sistemas que exigem precisão de sincronismo.</p>
+            <h3>Optibelt Red Power 3 e Blue Power</h3>
+            <p>Linhas premium com vida útil até 3x maior que correias convencionais. Desenvolvidas para aplicações de alta exigência em colheitadeiras, tratores e equipamentos de processo.</p>
+            <ul>
+              <li>Correias em V lisas — clássicas e standard</li>
+              <li>Correias sextavadas e variadoras de velocidade</li>
+              <li>Correias em V dentadas</li>
+              <li>Correias sincronizadoras abertas</li>
+              <li>Correias Poly V e especiais</li>
+              <li>Ferramentas especiais para montagem e alinhamento</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/distribuidores/Slide7.jpg',
+            './assets/distribuidores/Slide8.jpg',
+            './assets/distribuidores/Slide9.jpg'
+          ]
+        },
+        'mancais-e-buchas': {
+          categoria: 'Mancais',
+          titulo: 'Mancais e buchas',
+          resumo: 'Soluções para estabilidade de eixos e redução de desgaste em operação contínua. Distribuidor oficial BRG e BGL.',
+          capa: './assets/distribuidores/Bgl-Produtos.jpg',
+          capaAlt: 'Mancais e buchas industriais',
+          chips: ['Estabilidade de eixo', 'Fixação cônica', 'Alta carga', 'BRG · BGL'],
+          conteudo: `
+            <h2>Mancais e buchas para aplicações industriais</h2>
+            <p>A Nova Everest distribui as linhas completas <strong>BRG</strong> (mancais e vedações) e <strong>BGL</strong> (buchas e ferramentas hidráulicas), cobrindo desde aplicações padrão até demandas especiais.</p>
+            <h3>Mancais BRG</h3>
+            <p>Séries SNHL, SBM, SBP, SBPC, SAF, SD, SAI, SN, SNA, HPH, HPI, HMH, HMI, HFR, HEC, SOFN, STM, F500, PDN e TVN. Adequados para cargas radiais e axiais em ambientes industriais exigentes.</p>
+            <h3>Buchas BGL</h3>
+            <p>Buchas de fixação (H, HE, HA, HS) e desmontagem (AH, AHX) para rolamentos com furo cônico. Disponíveis também em versões hidráulicas para montagem e desmontagem facilitadas.</p>
+            <ul>
+              <li>Buchas de fixação e desmontagem — padrão e hidráulicas</li>
+              <li>Porcas de fixação e precisão</li>
+              <li>Arruelas de trava MB e MBL</li>
+              <li>Ferramentas: chaves de gancho, bombas hidráulicas, tubos de extensão</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/distribuidores/Bgl-Produtos-2.jpg',
+            './assets/distribuidores/Vedacoes-BRG.png'
+          ]
+        },
+        'acoplamentos-correntes-e-engrenagens': {
+          categoria: 'Acoplamentos',
+          titulo: 'Acoplamentos, correntes e engrenagens',
+          resumo: 'Componentes para transmissão mecânica com foco em durabilidade e desempenho operacional. Marcas Falk, Vulkan, Rotex e Radex.',
+          capa: './assets/fotos/16092019-IMG_8657-HDR.jpg',
+          capaAlt: 'Acoplamentos e engrenagens industriais',
+          chips: ['Transmissão mecânica', 'Falk · Vulkan', 'Rotex · Radex', 'Alta confiabilidade'],
+          conteudo: `
+            <h2>Soluções para transmissão mecânica</h2>
+            <p>Acoplamentos, correntes e engrenagens são componentes críticos em linhas de produção, transportadores, redutores e sistemas de acionamento industrial.</p>
+            <h3>Acoplamentos flexíveis</h3>
+            <p>Absorvem choques, vibrações e desalinhamentos entre eixos. Disponíveis nas marcas Falk, Vulkan, Rotex e Radex, com diferentes capacidades de torque e configurações.</p>
+            <h3>Correntes de transmissão</h3>
+            <p>Correntes simples, duplas e triplas para transmissão de potência em baixa e média velocidade. Alta resistência ao desgaste e à corrosão.</p>
+            <h3>Engrenagens e redutores</h3>
+            <p>Componentes para redução de velocidade e multiplicação de torque em aplicações industriais diversas.</p>
+            <ul>
+              <li>Acoplamentos flexíveis de garras e disco</li>
+              <li>Acoplamentos de grade e membrana</li>
+              <li>Correntes de rolos ANSI e DIN</li>
+              <li>Engrenagens cilíndricas e cônicas</li>
+              <li>Pinhões e rodas dentadas</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/fotos/16092019-IMG_8660-HDR.jpg',
+            './assets/fotos/16092019-IMG_8681-HDR.jpg'
+          ]
+        },
+        'retentores-e-aneis': {
+          categoria: 'Vedação',
+          titulo: 'Retentores e anéis',
+          resumo: 'Vedação de alta performance para ampliar a vida útil dos equipamentos e reduzir falhas por contaminação ou perda de lubrificação.',
+          capa: './assets/distribuidores/Vedacoes-BRG.png',
+          capaAlt: 'Retentores e anéis de vedação BRG',
+          chips: ['Vedação dinâmica', 'Anti-contaminação', 'BRG · Sabo', 'Reposição rápida'],
+          conteudo: `
+            <h2>Vedação industrial de alta performance</h2>
+            <p>Retentores e anéis de vedação são componentes essenciais para a confiabilidade de equipamentos rotativos, evitando vazamentos de lubrificante e entrada de contaminantes.</p>
+            <h3>Linha BRG</h3>
+            <p>Vedações TC, TG, TA, TS e TL (série TSNH), retentor R/R2, tampa ASNA/ASNH, anel de bloqueio FRB e gaxeta GS/ZF. Cobertura completa para mancais e eixos.</p>
+            <h3>Linha Sabo</h3>
+            <p>Retentores para aplicações automotivas e industriais, com ampla disponibilidade para reposição imediata.</p>
+            <ul>
+              <li>Retentores de lábio simples e duplo</li>
+              <li>Anéis O-ring em NBR, VITON e silicone</li>
+              <li>Gaxetas e vedações planas</li>
+              <li>Vedações para eixos de alta rotação</li>
+              <li>Vedações para ambientes com temperatura extrema</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/fotos/16092019-IMG_8781.jpg',
+            './assets/fotos/16092019-IMG_8782.jpg'
+          ]
+        },
+        'tubos-de-aco-carbono-e-conexoes': {
+          categoria: 'Estrutural',
+          titulo: 'Tubos de aço carbono e conexões',
+          resumo: 'Materiais para infraestrutura industrial, aplicações de processo e instalações de utilidades com fornecimento nacional e importado.',
+          capa: './assets/fotos/16092019-IMG_8804.jpg',
+          capaAlt: 'Tubos de aço carbono e conexões industriais',
+          chips: ['Aço carbono', 'Conexões ANSI', 'Processo industrial', 'Importação sob demanda'],
+          conteudo: `
+            <h2>Tubos e conexões para processo industrial</h2>
+            <p>A Nova Everest fornece tubos de aço carbono e conexões para projetos de processo, utilidades e instalações industriais, com capacidade de importação sob demanda para especificações especiais.</p>
+            <h3>Tubos de aço carbono</h3>
+            <p>Disponíveis em diferentes normas (ASTM, DIN, ABNT), diâmetros e espessuras de parede. Aplicações em sistemas de vapor, ar comprimido, água industrial e processos químicos.</p>
+            <h3>Conexões e flanges</h3>
+            <p>Cotovelos, tês, reduções, uniões, flanges e niples em aço carbono e inox. Conformes às normas ANSI/ASME B16.9 e B16.5.</p>
+            <ul>
+              <li>Tubos sem costura e com costura</li>
+              <li>Conexões soldadas e roscadas</li>
+              <li>Flanges slip-on, weld-neck e cego</li>
+              <li>Válvulas industriais (cotação sob consulta)</li>
+              <li>Importação de itens especiais com prazo de 20 a 25 dias</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/fotos/Frente.jpg',
+            './assets/fotos/16092019-IMG_8804.jpg'
+          ]
+        },
+        'polias-e-mangueiras': {
+          categoria: 'Complementares',
+          titulo: 'Polias e mangueiras',
+          resumo: 'Componentes para linhas de transmissão e manutenção operacional, com fornecimento nacional e importação sob demanda.',
+          capa: './assets/distribuidores/Slide10.jpg',
+          capaAlt: 'Polias e mangueiras industriais',
+          chips: ['Transmissão', 'Manutenção', 'Polias de ferro', 'Mangueiras hidráulicas'],
+          conteudo: `
+            <h2>Polias e mangueiras para manutenção industrial</h2>
+            <p>Polias e mangueiras são componentes de reposição frequente em linhas de produção, sistemas hidráulicos e equipamentos de movimentação.</p>
+            <h3>Polias industriais</h3>
+            <p>Polias de ferro fundido e aço para correias em V, disponíveis em diferentes diâmetros e número de canais. Polias para correias sincronizadoras e Poly V.</p>
+            <h3>Mangueiras hidráulicas e industriais</h3>
+            <p>Mangueiras de alta pressão para sistemas hidráulicos, mangueiras de ar comprimido, água e fluidos industriais. Confecção de mangueiras sob medida com terminais.</p>
+            <ul>
+              <li>Polias em V — simples, duplas e múltiplas</li>
+              <li>Polias para correias sincronizadoras</li>
+              <li>Mangueiras hidráulicas SAE 100R</li>
+              <li>Mangueiras de borracha e PVC</li>
+              <li>Terminais e conexões hidráulicas</li>
+            </ul>
+          `,
+          galeria: [
+            './assets/distribuidores/Slide11.jpg',
+            './assets/distribuidores/Slide12.jpg'
+          ]
+        },
+        'linha-industrial-sob-consulta': {
+          categoria: 'Multimarcas',
+          titulo: 'Linha industrial sob consulta',
+          resumo: 'Pesquisa técnica para itens específicos, reposição de peças especiais e atendimento comercial consultivo para demandas fora do portfólio padrão.',
+          capa: './assets/fotos/16092019-IMG_8660-HDR.jpg',
+          capaAlt: 'Atendimento consultivo Nova Everest',
+          chips: ['Pesquisa técnica', 'Importação sob demanda', 'Itens especiais', 'Multimarcas'],
+          conteudo: `
+            <h2>Atendimento consultivo para demandas especiais</h2>
+            <p>Além do portfólio padrão, a Nova Everest realiza pesquisa técnica e comercial para itens específicos, peças fora de linha e demandas de importação sob medida.</p>
+            <h3>Como funciona</h3>
+            <p>Envie o código do item, desenho técnico ou descrição da aplicação. Nossa equipe realiza a busca junto a fornecedores nacionais e internacionais e retorna com opções de fornecimento.</p>
+            <ul>
+              <li>Pesquisa em fornecedores nacionais e internacionais</li>
+              <li>Importação direta com prazo médio de 20 a 25 dias</li>
+              <li>Suporte técnico para identificação de equivalências</li>
+              <li>Cotação com múltiplas opções de marca e preço</li>
+              <li>Acompanhamento do pedido até a entrega</li>
+            </ul>
+            <h3>Segmentos atendidos</h3>
+            <p>Indústria em geral, setor agrícola, automotivo, papel e celulose, mineração, alimentos e bebidas, petróleo e gás.</p>
+          `,
+          galeria: [
+            './assets/fotos/16092019-IMG_8681-HDR.jpg',
+            './assets/fotos/16092019-IMG_8657-HDR.jpg'
+          ]
+        }
+      };
+
+      // ── Injeção de dados na página ──────────────────────────
+      const params = new URLSearchParams(window.location.search);
+      const item   = params.get('item') || 'rolamentos-industriais';
+      const data   = productData[item] || productData['rolamentos-industriais'];
+
+      // Meta e título
+      document.title = `${data.titulo} | Nova Everest`;
+      document.querySelector('meta[name="description"]').setAttribute('content', data.resumo);
+
+      // Breadcrumb
+      document.getElementById('produto-categoria-breadcrumb').textContent = data.categoria;
+
+      // Campos principais
+      document.getElementById('produto-categoria').textContent = data.categoria;
+      document.getElementById('produto-titulo').textContent    = data.titulo;
+      document.getElementById('produto-resumo').textContent    = data.resumo;
+
+      // Imagem de capa
+      const capa = document.getElementById('produto-capa');
+      capa.src = data.capa;
+      capa.alt = data.capaAlt;
+
+      // Chips de atributos
+      if (data.chips && data.chips.length > 0) {
+        document.getElementById('produto-chips').innerHTML =
+          data.chips.map(c => `<span class="chip">${c}</span>`).join('');
+      }
+
+      // Conteúdo técnico
+      document.getElementById('produto-conteudo').innerHTML = data.conteudo;
+
+      // Galeria
+      const galeria = document.getElementById('produto-galeria');
+      if (data.galeria && data.galeria.length > 0) {
+        galeria.innerHTML = data.galeria
+          .map((src, idx) => `<img src="${src}" alt="${data.titulo} — imagem ${idx + 1}" loading="lazy" />`)
+          .join('');
+      }
+
+      // Produtos relacionados
+      const relacionados = Object.entries(productData)
+        .filter(([key]) => key !== item)
+        .slice(0, 6)
+        .map(([key, value]) => `
+          <a class="catalog-card" href="./produto.html?item=${key}" title="${value.titulo}">
+            ${value.titulo}
+          </a>
+        `)
+        .join('');
+      document.getElementById('produto-relacionados').innerHTML = relacionados;
+
+      // Lightbox para galeria
+      document.querySelectorAll('.product-gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+          const overlay = document.createElement('div');
+          overlay.className = 'lightbox-overlay';
+          overlay.setAttribute('role', 'dialog');
+          overlay.setAttribute('aria-modal', 'true');
+          overlay.setAttribute('aria-label', 'Imagem ampliada');
+          const clone = document.createElement('img');
+          clone.src = img.src;
+          clone.alt = img.alt;
+          overlay.appendChild(clone);
+          document.body.appendChild(overlay);
+          document.body.style.overflow = 'hidden';
+          overlay.addEventListener('click', () => {
+            overlay.remove();
+            document.body.style.overflow = '';
+          });
+        });
+      });
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
