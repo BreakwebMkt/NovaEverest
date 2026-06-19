@@ -126,7 +126,7 @@ img { max-width: 100%; display: block; }
 .mobile-toggle span + span { margin-top: 6px; }
 
 .hero {
-  min-height: 78vh;
+  min-height: 88vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; }
   inset: 0;
   background-image: linear-gradient(90deg, hsl(var(--navy) / 0.95), hsl(var(--navy) / 0.8), hsl(var(--navy) / 0.6)), url('./assets/fotos/Frente.jpg');
   background-size: cover;
-  background-position: center 28%;
+  background-position: 62% 34%;
   background-repeat: no-repeat;
   transition: opacity 0.6s ease;
   animation: none;
@@ -651,8 +651,8 @@ img { max-width: 100%; display: block; }
   .main-nav.is-open { display: flex; }
   .hero,
   .page-head { margin-top: 4rem; }
-  .hero { min-height: 66vh; }
-  .hero-bg { background-position: center 22%; }
+  .hero { min-height: 72vh; }
+  .hero-bg { background-position: 68% 26%; }
   .metrics-wrap { margin-top: -2rem; }
   .metrics-grid,
   .product-grid,
