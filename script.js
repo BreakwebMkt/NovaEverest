@@ -80,7 +80,7 @@ if (whatsappForm) {
       .filter(Boolean)
       .join(' ');
 
-    const url = `https://wa.me/551120282005?text=${encodeURIComponent(texto)}`;
+    const url = `https://wa.me/5511989273388?text=${encodeURIComponent(texto)}`;
     window.open(url, '_blank', 'noopener');
   });
 }
