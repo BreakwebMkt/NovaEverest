@@ -72,7 +72,7 @@ if (whatsappForm) {
     const mensagem = String(formData.get('mensagem') || '').trim();
 
     const texto = [
-      `Ola! Me chamo ${nome}.`,
+      `Olá! Me chamo ${nome}.`,
       email ? `Email: ${email}.` : '',
       telefone ? `Telefone: ${telefone}.` : '',
       mensagem,
